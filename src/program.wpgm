@@ -1,6 +1,22 @@
 import wollok.game.*
+import auto.*
 
 program miPrimerWollokGame {
+	// límites del tablero de juego
+	game.width(14)
+	game.height(8)
+
+	// fondo del tablero de juego
+	//game.boardGround("empedrado.jpg")
+	
+	corsa.position(game.at(0.randomUpTo(game.width()), 0.randomUpTo(game.height())))
+	game.ground("paredLadrillos2.jpg")
+
+	// agregamos a nuestro objeto auto
+	game.addVisual(corsa)
+	
+	game.title("hermoso jueguito")
+
 	// que arranque el juego!
 	game.start()
 }
