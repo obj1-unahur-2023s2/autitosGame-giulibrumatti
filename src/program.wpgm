@@ -1,0 +1,6 @@
+import wollok.game.*
+
+program miPrimerWollokGame {
+	// que arranque el juego!
+	game.start()
+}
