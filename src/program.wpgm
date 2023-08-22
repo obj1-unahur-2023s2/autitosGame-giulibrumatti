@@ -16,7 +16,20 @@ program miPrimerWollokGame {
 	game.addVisual(corsa)
 	
 	game.title("hermoso jueguito")
-
+	
+	keyboard.up().onPressDo({
+		corsa.arriba()
+	})
+	keyboard.down().onPressDo({
+		corsa.abajo()
+	})
+	keyboard.left().onPressDo({
+		corsa.izquierda()
+	})
+	keyboard.right().onPressDo({
+		corsa.derecha()
+	})
+	
 	// que arranque el juego!
 	game.start()
 }
